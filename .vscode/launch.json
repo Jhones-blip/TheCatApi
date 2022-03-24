@@ -1,0 +1,30 @@
+{
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug CatApiV2",
+            "program": "${workspaceFolder:CatApiV2}/.build/debug/CatApiV2",
+            "args": [],
+            "cwd": "${workspaceFolder:CatApiV2}",
+            "preLaunchTask": "swift: Build Debug CatApiV2"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Release CatApiV2",
+            "program": "${workspaceFolder:CatApiV2}/.build/release/CatApiV2",
+            "args": [],
+            "cwd": "${workspaceFolder:CatApiV2}",
+            "preLaunchTask": "swift: Build Release CatApiV2"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Test CatApiV2",
+            "program": "${workspaceFolder:CatApiV2}/.build/debug/CatApiV2PackageTests.xctest",
+            "cwd": "${workspaceFolder:CatApiV2}",
+            "preLaunchTask": "swift: Build All"
+        }
+    ]
+}
